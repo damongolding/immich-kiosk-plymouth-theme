@@ -19,7 +19,7 @@ The theme is a blank screen with a spinning logo (below) in the center.
 2. Install the theme:
     ```bash
     cd immich-kiosk-plymouth-theme
-    sudo cp immich-kiosk /usr/share/plymouth/themes
+    sudo cp -r immich-kiosk /usr/share/plymouth/themes
     ```
 3. Enable the theme:
     ```bash
