@@ -14,7 +14,7 @@ The theme is a blank screen with a spinning logo (below) in the center.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/immich-kiosk-plymouth-theme.git
+    git clone https://github.com/damongolding/immich-kiosk-plymouth-theme.git
     ```
 2. Install the theme:
     ```bash
