@@ -1,0 +1,32 @@
+frame_count = 198;
+
+frames = [];
+
+for (i = 1; i <= frame_count; i++) {
+
+    if (i < 10)
+        filename = "kiosk-00" + i + ".png";
+    else if (i < 100)
+        filename = "kiosk-0" + i + ".png";
+    else
+        filename = "kiosk-" + i + ".png";
+
+    frames[i] = Image(filename);
+}
+
+sprite = Sprite();
+frame = 1;
+
+fun refresh_callback () {
+
+    sprite.SetImage(frames[frame]);
+
+    sprite.SetX((Window.GetWidth()  - 80) / 2);
+    sprite.SetY((Window.GetHeight() - 80) / 2);
+
+    frame++;
+    if (frame > frame_count)
+        frame = 1;
+}
+
+Plymouth.SetRefreshFunction(refresh_callback);
